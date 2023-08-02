@@ -1,6 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        .h{
+          color: blueviolet;
+          background-color: aqua;
+          border: 5px solid black;
+          text-align: center;
+          text-transform: capitalize;
+          word-spacing: 20px;
+          letter-spacing: 5px;
+          font-size: 60px;
+          text-shadow: 3px 3px 3px blue;
+        }
+        .p{
+            border: 2px solid black;
+            color: white(122,12,12);
+            text-shadow: orange;
+            font-size: 50px;
+            border-radius: 20px;
+            word-spacing: 20px;
+        }
+      </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -11,12 +32,15 @@
     <s>hgfdhj</s>
    h<sub>2</sub>o
    a<sup>2</sup>+b <sup>2</sup>
-
+   
+   <!-- links -->
    <img src="https://www.highspeedinternet.com/app/uploads/2022/11/hsi-speed-test-feature.png" height="300" width="200" alt="not formed">
    <img src="photo.jpg"height="300"width="200" alt="">
    <a href="https://google.com" target="_blank">google</a>
    <a href="https://facebook.com" target="_blank">facebook</a>
    <a href="https://instagram.com" target="_blank">instagram</a>
+
+   <!-- ordred and unordered list -->
    <ul>
     <li>home</li>
     <li>id</li>
@@ -41,16 +65,99 @@
      <dd>cold tea 20</dd>
      <dd>hot tea 10</dd>
      <dd>black tea 05</dd>
-   </dl>
-
+   </dl><br>
+    
+   <!-- audio and video -->
    <video width="400" controls loop>
     <source src="video.MP4">
-   </video>
+   </video><br>
 
 <audio controls>
     <source src="audio.mp3">
-</audio>
+</audio><br>
+
+<!-- table -->
+<table border="2">
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th colspan="2">email</th>
+        <th>password</th>
+    </tr>
+
+    <tr>
+        <td>01</td>
+        <td rowspan="3">ram</td>
+        <td>123@gmail.com</td>
+        <td>1234</td>
+    </tr>
+
+    <tr>
+        <td>02</td>
+        <td>shyam</td>
+        <td>321@gmail.com</td>
+        <td>4321</td>
+    </tr>
+
+    <tr>
+        <td>03</td>
+        <td>ritik</td>
+        <td>456@gmail.com</td>
+        <td>5678</td>
+    </tr>
+</table><br>
+
+<!-- form -->
+<center>
+<form action="">
+     <label for="" style="color: blue;">name:</label>
+    <input type="text" required value="ritik" autofocus placeholder="enter your name" name="name"><br><br>
+     <label for=""style="color: red;">email:</label>
+    <input type="email" readonly placeholder="enter email" value="123@gmail.com" disabled name="email"><br><br>
+     <label for=""style="color: green;">password</label>
+    <input type="password" placeholder="enter password" name="password"><br><br>
+    gender: <input type="radio" name="r">male
+            <input type="radio" name="r">female <br><br>
+    language: <input type="checkbox">hindi
+              <input type="checkbox">english
+              <input type="checkbox">russian <br><br>
+    date: <input type="date"><br><br>
+    time: <input type="time"> <br><br>
+    color: <input type="color"><br><br>
+    file: <input type="file"><br><br>
+    range: <input type="range"><br><br>
+    search: <input type="search"><br><br>
+    number: <input type="number"><br><br>
+    city: <select name="" id=""> <option value="">none</option>
+        <option value="">jaipur</option>
+        <option value="">bikaner</option>
+        <option value="">ajmer</option>
+    </select><br><br> 
+      <textarea name="" id="" cols="30" rows="10"></textarea><br><br>     
+    <button>submit</button><br>
+</form>
 
 
+<h1>my name is <span style="color: brown;">ritik</span></h1>
+HTML <progress id="file" max="100" value="80"> </progress><br><br>
+C <progress id="file" max="100" value="80"></progress><br><br>
+cpp <progress id="file" max="100" value="80" ></progress><br><br>
+java <progress id="file" max="100" value="80"></progress><br><br>
+</center>
+
+<!-- css coding -->
+<!-- inline css coding -->
+<div>
+    <h1 style="color: red; background-color: blue; border: 2px solid black; text-align: center; text-transform: capitalize; font-size: 70px; word-spacing: 30px; letter-spacing: 4px;">this is my heading tag</h1>
+</div>
+<!--  -->
+
+<div>
+    <h1 class="h">this is my tag</h1>
+    <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non veritatis, laboriosam eligendi sequi error minus! Nesciunt perspiciatis debitis laboriosam ipsam hic labore atque fugit porro, tempore, amet asperiores explicabo provident.</p>
+    <h1 class="h">this is my tag</h1>
+    <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, reiciendis amet nemo, odio hic consequatur illo eaque a veniam sit facere temporibus. Quidem, cum laboriosam dignissimos culpa voluptates tempora adipisci!</p>
+    <h1 class="h">this is my tag</h1>
+</div>
 </body>
 </html>
